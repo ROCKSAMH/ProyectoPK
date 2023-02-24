@@ -1,0 +1,560 @@
+@font-face {
+    font-family: "Pokemon Classic";
+    src: url("Pokemon Classic.ttf") format("truetype");
+}
+
+body {
+    font-family: "Pokemon Classic";
+    background-image: url(../assets/Fondofondo.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;      
+}
+
+#seleccionar-entrenador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-titulo {
+    display: flex;
+    justify-content: center;
+}
+
+.subtitulo {
+    color: #ffffffe0 ;
+    font-size: 20px;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    background-color: #0000005c;
+    height: 40px;
+    width: 550px;
+    text-align: center;
+    text-shadow: 0px 0px 5px rgb(0 0 0);
+}
+
+.subtitulo-2 {
+    color: #ffffffe0;
+    font-size: 20px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    background-color: #000000ad;
+    height: 40px;
+    width: 620px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.tarjetas {
+    display: flex;
+    gap: 10px; 
+    margin-top: 70px;  
+}
+
+.tarjeta-de-pokemon {
+    overflow: hidden;
+    box-shadow: 0px 0px 20px red;
+    width: 250px;
+    height: 400px;
+    transition: all 300ms;
+    cursor: pointer;
+    background-image: url(../assets/Fondo4.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 5px solid #000000;
+    border-radius: 20px    
+}
+
+.tarjeta-de-pokemon img {
+    width: 205px;
+}
+
+.tarjeta-de-pokemon p {
+    height: 30px;
+    text-align: center;
+    color: #a54747;
+    border: 4px solid #000000;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(255 0 0 / 78%);
+}
+
+.tarjeta-ash {
+    overflow: hidden;
+    box-shadow: 0px 0px 20px red;
+    width: 250px;
+    cursor: pointer;
+    transition: all 300ms;
+    height: 400px;
+    background-image: url(../assets/Fondo4.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 4px solid #000000;
+    border-radius: 20px  
+}
+.tarjeta-ash img {
+    width: 230px;  
+}
+ 
+.tarjeta-ash p {
+    height: 30px;
+    text-align: center;
+    color: #a54747;
+    border: 4px solid #000000;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(255 0 0 / 78%);
+}
+
+.tarjeta-Lionel {
+    overflow: hidden;
+    box-shadow: 0px 0px 20px red;
+    width: 250px;
+    height: 400px;
+    cursor: pointer;
+    transition: all 300ms;
+    background-image: url(../assets/Fondo4.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 5px solid #000000;
+    border-radius: 20px
+}
+
+.tarjeta-Lionel img {
+    width: 350px;
+}
+
+.tarjeta-Lionel p {
+    height: 30px;
+    text-align: center;
+    color: #a54747;
+    border: 4px solid #000000;
+    border-radius: 20px;
+    background-color: rgb(255, 255, 255);
+    text-shadow: 0px 0px 5px rgb(255 0 0 / 78%);
+}
+
+.tarjeta-Iris {
+    overflow: hidden;
+    box-shadow: 0px 0px 20px red;
+    width: 250px;
+    height: 400px;
+    cursor: pointer;
+    transition: all 300ms;
+    background-image: url(../assets/Fondo4.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding: 10px;
+    box-sizing: border-box;
+    margin: 10px;
+    border: 5px solid #000000;
+    border-radius: 20px    
+}
+
+.tarjeta-Iris img {
+    width: 260px;
+}
+
+.tarjeta-Iris p {
+    height: 30px;
+    text-align: center;
+    color: #a54747;
+    border: 4px solid #000000;
+    border-radius: 20px;
+    background-color: white;
+    text-shadow: 0px 0px 5px rgb(255 0 0 / 78%);
+}
+
+#boton-entrenador {
+    cursor: pointer;
+    font-family: "Pokemon Classic";
+    width: 250px;
+    height: 5vh;
+    margin: 5%;
+    box-shadow: 0px 0px 20px black;
+    border-radius: 20px;
+    background: #0000009e;
+    border: 3px solid #00000047;
+    color: #ffffff;
+    margin-top: 10px;
+    margin-bottom: 40px;        
+}
+#boton-entrenador:hover {
+    background-color: #00ffea4a;
+}
+input {
+    display: none;  
+}
+
+input:checked + label {
+    box-shadow: 0px 0px 20px #0097ff;
+    margin-top: -50px;
+    transition: all 300ms;
+    scale: 105%;
+    rotate: -3deg;
+}
+
+#reglas {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.reglas-titulo {
+    color: #ffffffe0;
+    font-size: 20px;
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+    background-color: #000000ad;
+    height: 38px;
+    width: 220px;
+    text-align: center;
+}
+
+.reglas-texto {
+    color: #000000e0;
+    font-size: 13px;
+    border: 3px solid #000000;
+    border-radius: 10px;
+    background-color: #ffffffb5;
+    height: 50px;
+    width: 1100px;
+    text-align: center;
+}
+
+.tipos {
+    display: flex;
+}
+
+.reglas-tipos-1 {
+    color: #000000e0;
+    font-size: 12px;
+    border: 2px solid #ff0000;
+    border-radius: 10px;
+    height: 25px;
+    width: 350px;
+    text-align: center;
+    margin: 5px;
+    background: #d49595b5;
+    box-shadow: 0px 0px 10px #ff0000;
+}
+
+.reglas-tipos-2 {
+    color: #000000e0;
+    font-size: 12px;
+    border: 2px solid #00aaff;
+    border-radius: 10px;
+    height: 25px;
+    width: 350px;
+    text-align: center;
+    margin: 5px;
+    background: #95afd4b5;
+    box-shadow: 0px 0px 10px #00ffea;
+}
+
+.reglas-tipos-3 {
+    color: #000000e0;
+    font-size: 12px;
+    border: 2px solid #2cff00;
+    border-radius: 10px;
+    height: 25px;
+    width: 350px;
+    text-align: center;
+    margin: 5px;
+    background: #95d49db5;
+    box-shadow: 0px 0px 10px #4bff00;   
+}
+
+.recomendacion {
+    color: #000000e0;
+    font-size: 12px;
+    border: 2px solid #ffffff;
+    border-radius: 10px;
+    height: 25px;
+    width: 640px;
+    text-align: center;
+    margin: 5px;
+    background: #ffffffb5;
+    box-shadow: 0px 0px 10px #000000;
+}
+
+#seleccionar-ataque {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ataques {
+    scale: 60%;
+    height:100px ;
+    width:100px ;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 100px;      
+}
+
+.boton-de-ataque1 {
+    height: 400px;
+    width: 270px;
+    margin: 50px;
+    margin-top: 0px;
+    cursor: pointer;
+    transition-duration: 1000ms, 2000ms;
+    background-color: #00ffff00;
+    background-image: url(../assets/Scorbunny.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #b8060600                 
+}
+
+.boton-de-ataque2 {
+    height: 400px;
+    width: 270px;
+    margin: 50px;
+    margin-top: 0px;
+    cursor: pointer;
+    transition-duration: 1000ms, 2000ms;
+    background-color: #00ffff00;
+    background-image: url(../assets/Mudkip.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #b8060600     
+}
+
+.boton-de-ataque3 {
+    height: 400px;
+    width: 270px;
+    margin: 50px;
+    margin-top: 0px;
+    cursor: pointer;
+    transition-duration: 1000ms, 2000ms;
+    background-color: #00ffff00;
+    background-image: url(../assets/Snivy.png);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border: 2px solid #b8060600
+}
+
+#nombres-botones {
+    display: flex;
+}
+
+#boton-de-fuego{
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid #ff0000;
+    background: #d49595b5;
+    height: 50px;
+    width: 160px;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px #ff0000;
+    color: white;
+    font-family: "Pokemon Classic"; 
+}
+
+#boton-de-agua {
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid #00aaff;
+    background: #95afd4b5;
+    height: 50px;
+    width: 129px;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px #00ffea;
+    color: white;
+    font-family: "Pokemon Classic";
+    margin-left: 70px;
+    margin-right: 90px;
+}
+
+#boton-de-planta {
+    text-align: center;
+    border-radius: 30px;
+    border: 2px solid #2cff00;
+    background: #95d49db5;
+    height: 50px;
+    width: 129px;
+    font-size: 15px;
+    box-shadow: 0px 0px 10px #4bff00;
+    color: white;
+    font-family: "Pokemon Classic";
+}
+
+#mensajes {
+    width: 280px;
+    background: #ffffffb3;
+    padding: 20px;
+    margin-top: 10px;
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    border: 3px solid #000000;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    box-shadow: 0px 0px 20px black;
+    text-shadow: 0px 0px 10px rgb(188 0 255 / 76%);
+}
+
+#boton-reiniciar {
+    color: #000000;
+    background-color: #0000004f;
+    margin-top: 10px;
+    font-size: 15px;
+    border-radius: 10px;
+    height: 50px;
+    cursor: pointer;
+    box-shadow: 0px 0px 20px black;
+}
+
+#boton-reiniciar:hover {
+    background-color: #00ffea4a;
+}
+
+.ataques-div {
+    display: flex;
+}
+
+#vidas-jugador, #vidas-enemigo {
+    font-size: 32px;
+    margin-bottom: 0;
+    margin-top: 0px;
+}
+
+.ataques-jugador, .ataques-enemigo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 90px;
+    width: 200px;
+    background: #ffffffb3;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 10px;
+    box-shadow: 0px 0px 20px black;
+}
+
+#entrenador-jugador, #entrenador-enemigo{
+    margin-top: 0px;
+}
+
+#ataques-del-jugador, #ataques-del-enemigo {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 200px;
+    height: 1000px;
+    margin-top: 5px;
+    background-color: #ffffffb3;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 0.76);
+}
+
+.vs {
+    width: 50px;
+    height: 50px;
+}
+
+.audio {
+    box-shadow: 0px 0px 30px rgb(188 0 255 / 76%);
+    border-radius: 30px;
+    height: 42px;
+    margin-top: 10px;
+    
+}
+.creditos {
+    height: 20px;
+    width: 204px;
+    text-align: center;
+    background-color: #ffffff9c;
+    margin-top: 20px;
+    border: 3px solid #000000;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px black;
+    font-size: 10px;
+}
+
+.boton-de-ataque1:hover{
+    transition-duration: 1000ms, 2000ms;
+    scale: 110%;
+    rotate: -5deg;
+}
+
+.boton-de-ataque2:hover{
+    transition-duration: 1000ms, 2000ms;
+    scale: 110%;
+    rotate: -5deg;
+}
+
+.boton-de-ataque3:hover{
+    transition-duration: 1000ms, 2000ms;
+    scale: 110%;
+    rotate: -5deg;
+}
+
+@media (max-width: 1280px) {
+    .tarjetas {
+        flex-direction: column;
+    }
+
+    .imagen-titulo {
+        scale: 48%;
+    }
+    .reglas-titulo {
+        scale: 80%
+    }
+    
+    .subtitulo, .reglas-texto{
+        height: 71px;
+        width: 351px;
+        font-size: 10px;
+    }
+
+    .subtitulo-2 {
+        height: 24px;
+        width: 351px;
+        font-size: 10px;
+    }
+
+    .ataques {
+        scale: 35%;
+    }
+
+    .nombres-botones2 {
+        margin-left: 10;
+        margin-right: 24px;
+        text-align: center;
+        border-radius: 20px;
+        border: 2px solid #b8060600;
+    }
+    #seleccionar-ataque {
+        height: 620px;
+    }
+}

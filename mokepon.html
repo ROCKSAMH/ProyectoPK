@@ -1,0 +1,133 @@
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>POKÉMON!</title>
+        <link rel="stylesheet" href="./css/styles.css">
+    </head>
+    <body>
+
+        <label class="imagen-titulo">
+            <img id="imagen-principal" src="./assets/titulo.png" alt="titulo" width="600px">
+            
+        </label>
+            
+        <section id="seleccionar-entrenador">
+
+                    
+            <h2 class="subtitulo">Elige tu entrenador Pokémon</h2>
+
+            <div class="tarjetas"onclick="sound4.play()">
+                <input type="radio" name="mascota" id="Steven">
+                <label class="tarjeta-de-pokemon" for="Steven">
+                    <p>Steven</p>
+                    <img src="./assets/Steven.png" alt="Steven">
+                </label>
+                <input type="radio" name="mascota" id="Steven">
+
+                <input type="radio" name="mascota" id="Cynthia">
+                <label class="tarjeta-de-pokemon" for="Cynthia">
+                    <p>Cynthia</p>
+                    <img src="./assets/Cynthia.png" alt="Cynthia">
+                </label>
+                <input type="radio" name="mascota" id="Cynthia">
+
+                <input type="radio" name="mascota" id="Ash">
+                <label class="tarjeta-ash" for="Ash">
+                    <p>Ash</p>
+                    <img src="./assets/Ash.png" alt="Ash">
+                </label>
+                <input type="radio" name="mascota" id="Ash">
+
+                <input type="radio" name="mascota" id="Lionel">
+                <label class="tarjeta-Lionel" for="Lionel">
+                    <p>Lionel</p>
+                    <img src="./assets/Lionel.png" alt="Lionel">
+                </label>
+                <input type="radio" name="mascota" id="Lionel">
+
+                <input type="radio" name="mascota" id="Iris">
+                <label class="tarjeta-Iris" for="Iris">
+                    <p>Mencía</p>
+                    <img src="./assets/Iris.png" alt="Iris">
+                </label>
+                <input type="radio" name="mascota" id="Iris">
+            </div>
+                    
+            <button id="boton-entrenador" onclick="sound5.play()">Seleccionar</button>
+        </section>
+
+        <section id="reglas">
+            <h2 class="reglas-titulo">Reglas</h2>
+            <h2 class="reglas-texto">Selecciona el Pokémon que quieras enviar al campo de batalla, tienes 5 Pokémon en tu inventario, se pueden repetir los Pokémon, tu rival atacara de manera aleatoria.</h2>
+            <h2 class="recomendacion">- Reproduce la música para una mejor experiencia de juego -</h2>
+            <div class="tipos">
+                <h2 class="reglas-tipos-1">Scorbunny🔥 vence a Snivy🌿</h2>
+                <h2 class="reglas-tipos-2">Mudkip💧 vence a Scorbunny🔥</h2>
+                <h2 class="reglas-tipos-3">Snivy🌿 vence a Mudkip💧</h2>
+            </div>        
+            <h2 class="subtitulo-2">Elige el Pokémon que va a combatir</h2>
+        </section>
+        
+        <section id="seleccionar-ataque">             
+            <div class="ataques">
+                <label class="boton-ataques1" for="Scorbunny">
+                    <button id="boton-fuego" class="boton-de-ataque1" onclick="sound1.play()" ></button>
+                </label>
+                
+                <label class="boton-ataques2" for="Mudkip">
+                    <button id="boton-agua" class="boton-de-ataque2" onclick="sound2.play()" ></button>
+                </label>
+
+                <label class="boton-ataques3" for="Snivy">
+                    <button id="boton-planta" class="boton-de-ataque3" onclick="sound3.play()"></button>  
+                </label>                               
+            </div>
+
+            <div class="nombres-botones">
+                <label class="nombres-botones1" for="Scorbunny">
+                    <button id="boton-de-fuego" class="nombres-botones1">Scorbunny</button>
+                    
+                </label>
+                <label class="nombres-botones2" for="Mudkip">
+                    <button id="boton-de-agua" class="nombres-botones2">Mudkip</button>
+                </label>
+
+                <label class="nombres-botones3" for="Snivy">
+                    <button id="boton-de-planta" class="nombres-botones3">Snivy</button>  
+                </label>                             
+            </div>
+
+            <div class="ataques-div">
+                <div class="ataques-jugador">
+                    <p id="vidas-jugador">5</p>
+                    <p id="entrenador-jugador"></p>
+                    <div id="ataques-del-jugador">---</div>
+                </div>
+
+                <div>
+                <div id="mensajes">
+                    <p id="resultado">Mucha suerte</p>
+                     <section id="reiniciar">
+                         <button id="boton-reiniciar">Reiniciar Juego</button>
+                         
+                    </section>
+                </div>                
+                </div>
+                <div class="ataques-enemigo">
+                    <p id="vidas-enemigo">5</p>
+                    <p id="entrenador-enemigo"></p>
+                    <div id="ataques-del-enemigo">---</div>
+                </div>
+                </div>               
+            </div>
+            <img class="vs" src="./assets/vs.png" alt="VS">
+            <audio class="audio" controls>
+                <source src="./assets/combate.mp3" type="audio/mp3">
+            </audio>
+            <p class="creditos">Santiago Hdz - 2023</p>
+        </section>
+        <script src="./js/mokepon.js"></script>
+    </body>
+</html>
